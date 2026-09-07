@@ -21,9 +21,9 @@ spec:
     - name: COMPANY
       value: "xFusionCorp"
     - name: GROUP
-      value: "Ltd"`
+      value: "Ltd"
 ```
-###🚀 Execution & Verification
+## 🚀 Execution & Verification
 ### 1. Deploy the Pod
 ```bash
 kubectl apply -f pod.yaml
