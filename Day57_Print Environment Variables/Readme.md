@@ -21,19 +21,22 @@ spec:
     - name: COMPANY
       value: "xFusionCorp"
     - name: GROUP
-      value: "Ltd"
+      value: "Ltd"`
 ```
 🚀 Execution & Verification
-1. Deploy the Pod
-Bash
+### 1. Deploy the Pod
+```bash
 kubectl apply -f pod.yaml
-2. Verify Output Logs
-Bash
+```
+### 2. Verify Output Logs
+```Bash
 kubectl logs -f print-envars-greeting
-Expected Output:
+```
+### Expected Output:
 
-Plaintext
+```Plaintext
 Welcome to xFusionCorp Ltd
-3. Check Pod Status
-Bash
+```
+### 3. Check Pod Status
+```Bash
 kubectl get pod print-envars-greeting
