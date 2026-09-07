@@ -22,6 +22,7 @@ spec:
       value: "xFusionCorp"
     - name: GROUP
       value: "Ltd"
+```
 🚀 Execution & Verification
 1. Deploy the Pod
 Bash
