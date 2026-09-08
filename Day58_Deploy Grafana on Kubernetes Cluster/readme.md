@@ -27,7 +27,26 @@ spec:
       - name: grafana
         image: grafana/grafana:latest
         ports:
-        - containerPort: 3000 
+        - containerPort: 3000
+```
+### 2. service.yaml
+```
+YAML
+apiVersion: v1
+kind: Service
+metadata:
+  name: grafana-deployment-xfusion
+  labels:
+    app: grafana-deployment-xfusion
+spec:
+  type: NodePort
+  selector:
+    app: grafana-deployment-xfusion
+  ports:
+  - port: 3000
+    targetPort: 3000
+    nodePort: 32000
+    protocol: TCP
 ```
 ## 🚀 Execution & Verification
 ### 1. Deploy the Application & Service
