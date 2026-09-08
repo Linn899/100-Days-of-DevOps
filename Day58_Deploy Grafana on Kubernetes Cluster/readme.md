@@ -1,9 +1,8 @@
 # Day 58: Deploy Grafana on Kubernetes Cluster
 
+This repository contains the Kubernetes manifests to deploy a Grafana application and expose it via a NodePort Service on port 32000.
 
-This repository contains the Kubernetes manifests to deploy a Grafana application and expose it via a NodePort Service.
-
-##  Manifest Files
+## Manifest Files
 
 ### 1. `deployment.yaml`
 ```yaml
@@ -59,3 +58,4 @@ kubectl apply -f service.yaml
 kubectl get deployment grafana-deployment-xfusion
 kubectl get svc grafana-deployment-xfusion -o wide
 kubectl get pods -l app=grafana-deployment-xfusion
+```
