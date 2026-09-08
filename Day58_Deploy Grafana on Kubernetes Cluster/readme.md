@@ -29,8 +29,8 @@ spec:
         - containerPort: 3000
 ```
 ### 2. service.yaml
-```
-YAML
+
+```YAML
 apiVersion: v1
 kind: Service
 metadata:
