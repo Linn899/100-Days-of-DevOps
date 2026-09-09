@@ -20,24 +20,27 @@ Inspect pod events to locate the volume mount failure:
 # Describe the pod to review error events
 kubectl describe pod <failing-pod-name>
 ```
-2. Apply the Fix
+### 2. Apply the Fix
 Edit the deployment configuration directly in the cluster to correct the ConfigMap name typo:
 ```
-Bash
+
 # Edit deployment configuration
 kubectl edit deploy redis-deployment
 Updated redis-conig to redis-config.
 ```
-3. Verify Deployment & Pod Status
+### 3. Verify Deployment & Pod Status
 Confirm that the deployment rollout succeeded and the pod is running:
 
-Bash
+```
 # Check deployment status
 kubectl get deploy
-
-# Check pod status and restarts
+```
+### 4. Check pod status and restarts
 kubectl get po
-✅ Final Result
+```
+```
+### ✅ Final Result
 Deployment: redis-deployment (1/1 READY)
 
 Pod Status: redis-deployment-5476b4ddd6-p682g is Running (0 Restarts)
+```
