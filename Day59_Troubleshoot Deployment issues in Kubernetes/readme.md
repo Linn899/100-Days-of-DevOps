@@ -13,20 +13,21 @@ Upon inspecting the pod events using `kubectl describe`, the following error was
 ---
 
 ## 💻 Exact Commands Executed
-```
-# 1. Diagnose the Issue
+
+### 1. Diagnose the Issue
 Inspect pod events to locate the volume mount failure:
 ```bash
 # Describe the pod to review error events
 kubectl describe pod <failing-pod-name>
+```
 2. Apply the Fix
 Edit the deployment configuration directly in the cluster to correct the ConfigMap name typo:
-
+```
 Bash
 # Edit deployment configuration
 kubectl edit deploy redis-deployment
 Updated redis-conig to redis-config.
-
+```
 3. Verify Deployment & Pod Status
 Confirm that the deployment rollout succeeded and the pod is running:
 
