@@ -13,8 +13,8 @@ Upon inspecting the pod events using `kubectl describe`, the following error was
 ---
 
 ## 💻 Exact Commands Executed
-
-### 1. Diagnose the Issue
+```
+# 1. Diagnose the Issue
 Inspect pod events to locate the volume mount failure:
 ```bash
 # Describe the pod to review error events
