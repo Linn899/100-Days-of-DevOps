@@ -36,10 +36,12 @@ Confirm that the deployment rollout succeeded and the pod is running:
 kubectl get deploy
 ```
 ### 4. Check pod status and restarts
-kubectl get po
 ```
+kubectl get po
+
 ```
 ### ✅ Final Result
+```
 Deployment: redis-deployment (1/1 READY)
 
 Pod Status: redis-deployment-5476b4ddd6-p682g is Running (0 Restarts)
